@@ -1,0 +1,86 @@
+.container {
+    margin: 0 2rem;
+    padding: 1rem;
+    display: flex;
+}
+
+
+.history {
+    background: rgb(197, 197, 197);
+    padding: 1rem;
+    flex: 2;
+}
+
+.itemsContainer {
+    margin: 1rem;
+}
+
+.itemsWrapper {
+    position: relative;
+    margin: 2rem 6rem;
+}
+
+.itemsWrapper::before {
+    width: 2rem;
+    height: 2rem;
+    content: "";
+    display: block;
+    position: absolute;
+    background: blue;
+    top: 1rem;
+    left: -5rem;
+    border-radius: 50%;
+}
+
+.itemsWrapper::after {
+    width: 0.2rem;
+    content: "";
+    display: block;
+    position: absolute;
+    background: blue;
+    top: 3rem;
+    bottom: -2rem;
+    left: -4.2rem;
+}
+
+.items {
+    background: white;
+    padding: 1rem;
+}
+
+.items::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0rem;
+    height: 0rem;
+    left: -3rem;
+    top: 0.5rem;
+    border-left: 1.5rem solid transparent;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid white;
+
+}
+
+.items h3 {
+    margin-bottom: 1rem;
+}
+
+.details {
+    flex: 1;
+    padding: 1rem;
+}
+
+.details h2 {
+    margin-top: 2rem;
+    border-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+
+.details table {
+    width: 100%;
+    text-align: left;
+}
